@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isang digital na paglalakbay sa buhay at pamana ni Jose Rizal sa Dapitan, 1892–1896.">
+  <title>Rizal in Dapitan | A Digital Legacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- EDIT: Palitan ang pangalan ng site o navigation labels dito. -->
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">R</span><span>RIZAL <small>IN DAPITAN</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buksan ang navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#story">Ang Kuwento</a><a href="#timeline">Timeline</a><a href="#legacy">Mga Ambag</a><a href="#gallery">Gallery</a><a href="#sources">Sanggunian</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: Palitan ang heading, subtitle, at background image URL kung nais. -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">1892 — 1896 · DAPITAN, MINDANAO</p>
+        <h1>Rizal in<br><em>Dapitan</em></h1>
+        <p class="hero-subtitle">A Digital Legacy</p>
+        <p class="hero-copy">Sa apat na taong pagkakatapon, ginamit ni José Rizal ang kaalaman upang magturo, magpagaling, magsaliksik, at maglingkod sa isang pamayanan.</p>
+        <a class="button button-light" href="#story">Tuklasin ang kaniyang kuwento <span>→</span></a>
+      </div>
+      <div class="hero-note"><span class="note-line"></span> ISANG PAMANA NG PAGLILINGKOD</div>
+    </section>
+
+    <!-- INTRODUCTION: Baguhin ang talata kung kailangan. -->
+    <section class="intro section-wrap" id="story">
+      <div class="section-kicker">01 / ANG PAGKAKATAPON</div>
+      <div class="intro-grid">
+        <div><h2>Hindi natigil ang kaniyang paglilingkod.</h2></div>
+        <div class="intro-text"><p>Noong Hulyo 17, 1892, dumating si Rizal sa Dapitan matapos siyang ipatapon ng pamahalaang kolonyal ng Espanya. Sa halip na hayaang maging panahon lamang ito ng paghihintay, ginawa niya itong pagkakataon upang gamitin ang kaniyang mga kakayahan para sa kapakanan ng mga taga-Dapitan.</p><p>Nagturo siya sa mga kabataan, nanggamot ng mga maysakit, naglinang ng lupa, nag-aral ng kalikasan, at tumulong sa mga proyektong pangkomunidad.</p></div>
+      </div>
+      <div class="fact-strip"><div><strong>4</strong><span>taon sa Dapitan</span></div><div><strong>1892</strong><span>simula ng pagkatapon</span></div><div><strong>1896</strong><span>taon ng paglisan</span></div><div><strong>5</strong><span>larangan ng ambag</span></div></div>
+    </section>
+
+    <!-- TIMELINE: Ang mga event ay nasa script.js. Maaari mong idagdag o baguhin ang entries doon. -->
+    <section class="timeline-section" id="timeline">
+      <div class="section-wrap">
+        <div class="section-kicker">02 / MGA MAHAHALAGANG PANGYAYARI</div>
+        <div class="section-heading-row"><div><h2>Isang buhay na<br><em>may layunin.</em></h2><p class="section-lead">Sundan ang mahahalagang sandali ng apat na taon ni Rizal sa Dapitan.</p></div><div class="timeline-count">1892 <span>—</span> 1896</div></div>
+        <div class="timeline-controls" id="timelineFilters" aria-label="Salain ang timeline">
+          <button class="filter-btn active" data-filter="all">Lahat</button><button class="filter-btn" data-filter="community">Pamayanan</button><button class="filter-btn" data-filter="learning">Edukasyon at agham</button><button class="filter-btn" data-filter="personal">Personal</button>
+        </div>
+        <div class="timeline-list" id="timelineList" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- CONTRIBUTIONS: I-edit ang mga card dito. -->
+    <section class="legacy section-wrap" id="legacy">
+      <div class="section-kicker">03 / LIMANG LARANGAN NG AMBAG</div>
+      <div class="section-heading-row"><div><h2>Kaalamang<br><em>may kabuluhan.</em></h2></div><p class="section-lead">Hindi lamang siya sumulat. Isinabuhay niya ang kaalaman sa pamamagitan ng mga gawaing nakatulong sa komunidad.</p></div>
+      <div class="legacy-grid">
+        <article class="legacy-card"><span class="card-number">01</span><div class="card-icon">✎</div><h3>Edukasyon</h3><p>Nagtatag siya ng paaralan para sa mga batang lalaki sa Talisay. Itinuro niya ang pagbasa, pagsulat, wika, heograpiya, agham, at mga praktikal na kasanayan.</p><span class="card-tag">Paaralan sa Talisay</span></article>
+        <article class="legacy-card"><span class="card-number">02</span><div class="card-icon">✚</div><h3>Medisina</h3><p>Naglingkod siya bilang manggagamot at dalubhasa sa mata. Tumanggap siya ng mga pasyente, kabilang ang mga naglakbay mula sa malalayong lugar upang magpakonsulta.</p><span class="card-tag">Pangangalaga sa kalusugan</span></article>
+        <article class="legacy-card"><span class="card-number">03</span><div class="card-icon">♧</div><h3>Agrikultura</h3><p>Nagtanim siya ng mga punong namumunga at nag-alaga ng mga hayop sa kaniyang lupain. Ipinakita niya ang halaga ng masinop na pagsasaka at paglinang ng kapaligiran.</p><span class="card-tag">Lupain sa Talisay</span></article>
+        <article class="legacy-card"><span class="card-number">04</span><div class="card-icon">⌂</div><h3>Negosyo at kabuhayan</h3><p>Pinagyaman niya ang kaniyang lupain at mga gawaing pangkabuhayan. Ginamit din niya ang kinita sa panggagamot upang makatulong sa mga proyektong pampamayanan. Hindi dapat ipagkamali ang mga ito sa isang malaking komersiyal na negosyo.</p><span class="card-tag">Kabuhayan at paglilingkod</span></article>
+        <article class="legacy-card wide-card"><span class="card-number">05</span><div class="card-icon">⌕</div><h3>Agham at inhenyeriya</h3><p>Nangolekta at nag-aral siya ng mga halaman at hayop sa paligid ng Dapitan, at nakipag-ugnayan sa mga iskolar sa ibang bansa. Tumulong din siya sa pagdidisenyo ng sistemang patubig o suplay ng tubig para sa bayan at gumawa ng relief map ng Mindanao.</p><span class="card-tag">Pananaliksik · Waterworks · Relief map</span></article>
+      </div>
+    </section>
+
+    <!-- PEOPLE: Mahahalagang taong nakaugnay sa Dapitan. -->
+    <section class="people-section">
+      <div class="section-wrap people-grid">
+        <div><div class="section-kicker">04 / MGA TAONG NAKAUUGNAY</div><h2>Mga ugnayang<br><em>nagbigay-kulay</em><br>sa Dapitan.</h2></div>
+        <div class="people-list">
+          <article><span>01</span><div><h3>Kapitan Ricardo Carnicero</h3><p>Ang komandanteng namahala sa Dapitan nang dumating si Rizal. Sa paglipas ng panahon, naging magkaibigan sila.</p></div></article>
+          <article><span>02</span><div><h3>Josephine Bracken</h3><p>Nakilala ni Rizal si Josephine noong 1895 nang dumating ito sa Dapitan kasama ang amang-amahan nitong si George Taufer upang magpagamot.</p></div></article>
+          <article><span>03</span><div><h3>Mga mag-aaral sa Talisay</h3><p>Ang mga kabataang tinuruan ni Rizal ay bahagi ng kaniyang layuning hubugin ang isip at kakayahan ng susunod na henerasyon.</p></div></article>
+          <article><span>04</span><div><h3>Ferdinand Blumentritt</h3><p>Kaibigang iskolar na patuloy niyang sinulatan. Sa kanilang ugnayan, naibahagi ni Rizal ang kaniyang mga obserbasyon at pananaliksik.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY: Real-world photographs and historical artwork; replace URLs/captions as desired. -->
+    <section class="gallery-section section-wrap" id="gallery">
+      <div class="section-kicker">05 / MGA LARAWAN AT BISWAL</div>
+      <div class="section-heading-row"><div><h2>Mga bakas ng<br><em>nakaraan.</em></h2></div><p class="section-lead">Mga larawan ng mga pook-pamana sa Dapitan at isang halimbawa ng likhang pang-agham ni Rizal.</p></div>
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-large"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jose%20Rizal%20Park%20and%20Shrine.jpg" alt="Rizal Park and Shrine sa Dapitan" loading="lazy"><figcaption><strong>Rizal Park and Shrine</strong><span>Dapitan, Zamboanga del Norte · Larawan: Wikimedia Commons</span></figcaption></figure>
+        <figure class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Casa%20Redonda%20Octogon%20Clinic%20of%20Rizal.JPG" alt="Casa Redonda, klinikang ginamit ni Rizal" loading="lazy"><figcaption><strong>Casa Redonda</strong><span>Isa sa mga estrukturang matatagpuan sa pook-pamana</span></figcaption></figure>
+        <figure class="gallery-item"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jose%20Rizal%27s%20drawings%20of%20the%20fishes%20found%20in%20Dapitan.jpg" alt="Mga guhit ni Rizal ng mga isdang natagpuan sa Dapitan" loading="lazy"><figcaption><strong>Mga guhit ng mga isda</strong><span>Halimbawa ng kaniyang interes sa natural history</span></figcaption></figure>
+      </div>
+      <p class="image-note">Paalala: Ang mga larawan ng kasalukuyang dambana ay kuha sa makabagong panahon; hindi ito mga larawang kinunan noong panahon ng pagkakatapon.</p>
+    </section>
+
+    <!-- TECHNOLOGY IN HISTORY EDUCATION: Required short explanation. -->
+    <section class="tech-section">
+      <div class="section-wrap tech-grid"><div><div class="section-kicker">06 / KASAYSAYAN AT TEKNOLOHIYA</div><h2>Mas buhay ang<br><em>pagkatuto.</em></h2></div><div class="tech-copy"><p>Nakatutulong ang teknolohiya sa pagtuturo ng kasaysayan dahil nagiging mas madaling makita, marinig, at maunawaan ang mga pangyayari. Sa pamamagitan ng interactive timeline, larawan, bidyo, at digital na sanggunian, naiuugnay ng mga mag-aaral ang mga petsa sa tunay na lugar, tao, at karanasan.</p><p>Sa proyektong ito, maaaring tuklasin ng mga mag-aaral ang mga pangyayari ayon sa panahon at paksa. Nagbibigay rin ang mga link sa sanggunian ng pagkakataong suriin ang impormasyon at magsagawa ng sariling pananaliksik.</p><div class="tech-points"><span>01 · Interaktibong paggalugad</span><span>02 · Biswal na pagkatuto</span><span>03 · Mas madaling pananaliksik</span></div></div></div>
+    </section>
+
+    <!-- SOURCES: Keep links and image credits. Add any sources you consult. -->
+    <section class="sources-section section-wrap" id="sources">
+      <div class="section-kicker">07 / SANGGUNIAN AT IMAGE CREDITS</div><h2>Balikan ang<br><em>mga sanggunian.</em></h2>
+      <p class="section-lead">Ginamit ang mga sumusunod na materyal para sa kontekstong pangkasaysayan at mga biswal. Buksan ang mga link upang mabasa ang buong sanggunian at detalye ng lisensiya ng larawan.</p>
+      <ol class="source-list">
+        <li><div><strong>Philippine Folklife Museum Foundation — José Rizal</strong><span>Talambuhay, buhay sa Talisay, paaralan, medisina, water system, at mga koleksiyon sa agham.</span></div><a href="https://www.philippinefolklifemuseum.org/exhibitions/jose-rizal/" target="_blank" rel="noopener">Buksan ↗</a></li>
+        <li><div><strong>Philippine Veterans Affairs Office — The Philippine Historic Past</strong><span>Maikling tala tungkol sa pagkatapon ni Rizal at kaniyang mga gawain sa Dapitan.</span></div><a href="https://pvao.gov.ph/wp-content/uploads/2018/02/Philippine-History.pdf" target="_blank" rel="noopener">Buksan ↗</a></li>
+        <li><div><strong>Proclamation No. 930, s. 1992 — Official Gazette / Lawphil</strong><span>Pagkilala sa ika-100 taon ng pagkatapon ni Rizal at sa mga proyektong iniugnay sa kaniyang paglilingkod sa Dapitan.</span></div><a href="https://lawphil.net/executive/proc/proc1992/pdf/proc_930_1992.pdf" target="_blank" rel="noopener">Buksan ↗</a></li>
+        <li><div><strong>Wikimedia Commons — Rizal Shrine (Dapitan)</strong><span>Mga larawan ng mga bahay at estruktura sa Rizal Shrine. Tingnan ang indibidwal na file page para sa may-akda at lisensiya.</span></div><a href="https://commons.wikimedia.org/wiki/Category:Rizal_Shrine_(Dapitan)" target="_blank" rel="noopener">Buksan ↗</a></li>
+        <li><div><strong>Wikimedia Commons — José Rizal</strong><span>Koleksiyon ng mga larawan at likhang may kaugnayan kay Rizal, kabilang ang mga guhit ng isda mula sa Dapitan.</span></div><a href="https://commons.wikimedia.org/wiki/Category:Jos%C3%A9_Rizal" target="_blank" rel="noopener">Buksan ↗</a></li>
+      </ol>
+      <p class="citation-reminder">Para sa pinal na pagpasa, tiyaking buksan ang bawat larawan sa Wikimedia Commons at ilagay ang eksaktong pangalan ng photographer/creator at lisensiya sa caption o hiwalay na image-credit list.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">R</span><span>RIZAL <small>IN DAPITAN</small></span></a><p style="text-align: center;">Isang digital na paggunita sa pamana ni José Rizal sa Dapitan, 1892–1896.<br> Ginawa ni ginoong Russel Nathan R. Alarcon BSCS-3A </p><a href="#home" class="back-top">BUMALIK SA ITAAS ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
